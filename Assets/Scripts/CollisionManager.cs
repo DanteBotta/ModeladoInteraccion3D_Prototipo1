@@ -4,12 +4,38 @@ using UnityEngine;
 
 public class CollisionManager : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    public GameObject imagenUI;
+    GameObject objetoActual;
+
+    void Start()
     {
-        if (other.gameObject.CompareTag("Pickable"))
+        imagenUI.SetActive(false);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Pickable"))
         {
-            Destroy(other.gameObject);
+            objetoActual = other.gameObject;
+            imagenUI.SetActive(true);
         }
     }
 
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Pickable"))
+        {
+            imagenUI.SetActive(false);
+            objetoActual = null;
+        }
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && objetoActual != null)
+        {
+            Destroy(objetoActual);
+            imagenUI.SetActive(false);
+        }
+    }
 }
