@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class InteractiveArea : MonoBehaviour
 {
-    public UIManager UIManager;
+    public GameManager GameManager;
     public int Score = 0;
 
     void Awake()
     {
-        UIManager = GameObject.FindObjectOfType<UIManager>();
+        GameManager = GameObject.FindObjectOfType<GameManager>();
     }
 
     private void OnTriggerEnter(Collider other) 
@@ -18,7 +18,7 @@ public class InteractiveArea : MonoBehaviour
         { 
             Destroy(other.gameObject); 
             Score += 1;
-            UIManager.UpdateScore(Score);
+            GameManager.UpdateScore(Score);
         } 
     }
 
