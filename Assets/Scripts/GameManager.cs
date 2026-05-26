@@ -28,7 +28,8 @@ public class GameManager : MonoBehaviour
 
     public void UpdateScore(int score)
     {
-        if (JuegoTerminado == false){
+        if (!JuegoTerminado)
+        {
             TextoScore.text = "Score: " + score.ToString();
         }
     }
@@ -36,21 +37,20 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Tiempo >= 0 && JuegoTerminado == false)
+        if (Tiempo >= 0 && !JuegoTerminado)
         {
             Tiempo -= Time.deltaTime;
             TextoTimer.text = "Tiempo: " + Tiempo.ToString("F1");
         }
         
-        if (InteractiveArea.Score >= MaximoScore)
+        if (InteractiveArea.Score >= MaximoScore && !JuegoTerminado)
         {
             Debug.Log("YOU WIN");
             JuegoTerminado = true;
         }
         
-        if (Tiempo <= 0)
+        if (Tiempo <= 0 && !JuegoTerminado)
         {
-            TextoTimer.text = "Game Over";
             Debug.Log("GAME OVER");
             JuegoTerminado = true;
         }
