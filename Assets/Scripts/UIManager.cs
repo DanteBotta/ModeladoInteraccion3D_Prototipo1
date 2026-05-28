@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject PanelVictoria;
+    public GameObject PanelDerrota;
+
+    public void MostrarPantallaWin()
     {
-        
+        PanelVictoria.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void MostrarPantallaGameOver()
     {
-        
+        PanelDerrota.SetActive(true);
     }
 }
