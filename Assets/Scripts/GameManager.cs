@@ -7,21 +7,22 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public InteractiveArea InteractiveArea;
+    public UIManager UIManager;
 
     public TextMeshProUGUI TextoTimer;
     public TextMeshProUGUI TextoScore;
 
-    public GameObject PanelVictoria;
-    public GameObject PanelDerrota;
+    float Tiempo = 15f; = false;
 
-    float Tiempo = 15f;
-    bool JuegoTerminado = false;
     public int MaximoScore = 4;
 
     // Start is called before the first frame update
     void Awake()
     {
         InteractiveArea = GameObject.FindObjectOfType<InteractiveArea>();
+        UIManager = GameObject.FindObjectOfType<UIManager>();
+
+        Time.timeScale = 1;
     }
 
     // Start is called before the first frame update
@@ -47,18 +48,15 @@ public class GameManager : MonoBehaviour
             TextoTimer.text = "Tiempo: " + Tiempo.ToString("F1");
         }
         
-        if (InteractiveArea.Score >= MaximoScore && !JuegoTerminado)
-        {
-            Debug.Log("YOU WIN");
-            JuegoTerminado = true;
-            PanelVictoria.SetActive(true);
-        }
-        
         if (Tiempo <= 0 && !JuegoTerminado)
         {
             Debug.Log("GAME OVER");
+
             JuegoTerminado = true;
-            PanelDerrota.SetActive(true);
+
+            UIManager.MostrarPantallaGameOver();
+
+            Time.timeScale = 0;
         }
 
         if(Input.GetKeyDown(KeyCode.R))
