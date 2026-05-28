@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,7 +11,10 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI TextoTimer;
     public TextMeshProUGUI TextoScore;
 
-    float Tiempo = 5f;
+    public GameObject PanelVictoria;
+    public GameObject PanelDerrota;
+
+    float Tiempo = 15f;
     bool JuegoTerminado = false;
     public int MaximoScore = 4;
 
@@ -47,13 +51,22 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("YOU WIN");
             JuegoTerminado = true;
+            PanelVictoria.SetActive(true);
         }
         
         if (Tiempo <= 0 && !JuegoTerminado)
         {
             Debug.Log("GAME OVER");
             JuegoTerminado = true;
+            PanelDerrota.SetActive(true);
         }
-        
+
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            if (JuegoTerminado)
+            {
+                SceneManager.LoadScene("Juego");
+            }
+        }
     }
 }
