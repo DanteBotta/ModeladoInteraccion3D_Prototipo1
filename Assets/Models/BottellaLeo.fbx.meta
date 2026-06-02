@@ -1,17 +1,33 @@
 fileFormatVersion: 2
-guid: 2828019de998c3c489a0aaac1694c2af
+guid: 31aa26bf9d12f8b4e8cc67cd153f8c9c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: Pintura
-    2100002: Madera
-    2100004: Metal
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Silla
-  externalObjects: {}
+    100000: Botella
+    100002: //RootNode
+    100004: Tapa
+    400000: Botella
+    400002: //RootNode
+    400004: Tapa
+    2100000: Carcasa
+    2100002: Tapa
+    2300000: Botella
+    2300002: Tapa
+    3300000: Botella
+    3300002: Tapa
+    4300000: Botella
+    4300002: Tapa
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Carcasa
+    second: {fileID: 2100000, guid: 799a5068283e96749ba273d5676bd33b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tapa
+    second: {fileID: 2100000, guid: bc3d15b7fdd786d4fb781ed6b68a5bd9, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
