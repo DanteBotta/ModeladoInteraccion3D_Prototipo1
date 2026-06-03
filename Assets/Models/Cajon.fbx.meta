@@ -4,14 +4,21 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Cajon
+    100004: Mueble
     400000: //RootNode
-    2100000: Madera gris
-    2100002: Madera clara
-    2100004: Madera rota
-    2100006: Metal
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Cube
+    400002: Cajon
+    400004: Mueble
+    2100000: Madera clara
+    2100002: Madera rota
+    2100004: Metal
+    2100006: Madera gris
+    2300000: Cajon
+    2300002: Mueble
+    3300000: Cajon
+    3300002: Mueble
+    4300000: Cajon
+    4300002: Mueble
   externalObjects: {}
   materials:
     importMaterials: 1

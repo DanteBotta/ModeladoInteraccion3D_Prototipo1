@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI TextoTimer;
     public TextMeshProUGUI TextoScore;
 
-    float Tiempo = 15f;
+    public float Tiempo = 15f;
     public bool JuegoTerminado = false;
     
     public int MaximoScore = 4;

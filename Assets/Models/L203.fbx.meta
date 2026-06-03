@@ -1,22 +1,39 @@
 fileFormatVersion: 2
-guid: 31aa26bf9d12f8b4e8cc67cd153f8c9c
+guid: 68637990a74e73b48820980d3aaf8c1b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Botella
-    100002: //RootNode
-    100004: Tapa
-    400000: Botella
-    400002: //RootNode
-    400004: Tapa
-    2100000: Carcasa
-    2100002: Tapa
-    2300000: Botella
-    2300002: Tapa
-    3300000: Botella
-    3300002: Tapa
-    4300000: Botella
-    4300002: Tapa
+    100000: //RootNode
+    100002: L203
+    100004: L203_Piso
+    100006: L203_Techo
+    100008: L203_Ventanas
+    400000: //RootNode
+    400002: L203
+    400004: L203_Piso
+    400006: L203_Techo
+    400008: L203_Ventanas
+    2100000: paredes
+    2100002: piso
+    2100004: Techo
+    2100006: Marcos
+    2100008: Vidrio.001
+    2100010: Marcos.006
+    2100012: Vidrio.007
+    2100014: Marcos.009
+    2100016: Vidrio.010
+    2300000: L203
+    2300002: L203_Piso
+    2300004: L203_Techo
+    2300006: L203_Ventanas
+    3300000: L203
+    3300002: L203_Piso
+    3300004: L203_Techo
+    3300006: L203_Ventanas
+    4300000: L203
+    4300002: L203_Piso
+    4300004: L203_Techo
+    4300006: L203_Ventanas
   externalObjects: {}
   materials:
     importMaterials: 1
