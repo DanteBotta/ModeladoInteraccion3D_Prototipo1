@@ -29,6 +29,12 @@ public class InteractiveArea : MonoBehaviour
                 Time.timeScale = 0;
                 GameManager.JuegoTerminado = true;
             }
+        }
+        if (other.gameObject.CompareTag("Puerta"))
+        {
+            Animator anim = other.gameObject.GetComponent<Animator>();
+
+            anim.enabled = true;
         } 
     }
 }

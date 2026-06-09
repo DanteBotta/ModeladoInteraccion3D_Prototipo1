@@ -1,26 +1,28 @@
 fileFormatVersion: 2
-guid: 89a5d95117308fb4e8d790173d4698c3
+guid: c4c7bf0843d0b9443808f97b048aeb48
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Cajon
-    100004: Mueble
-    400000: //RootNode
-    400002: Cajon
-    400004: Mueble
-    2100000: Madera clara
-    2100002: Madera rota
-    2100004: Metal
-    2100006: Madera gris
-    2300000: Cajon
-    2300002: Mueble
-    3300000: Cajon
-    3300002: Mueble
-    4300000: Cajon
-    4300002: Mueble
-    7400000: Cajon|CajonAction
-    9500000: //RootNode
+    100000: Bordes
+    100002: Marco
+    100004: //RootNode
+    100006: Pizarron
+    400000: Bordes
+    400002: Marco
+    400004: //RootNode
+    400006: Pizarron
+    2100000: Borde
+    2100002: Marco
+    2100004: Pizarra
+    2300000: Bordes
+    2300002: Marco
+    2300004: Pizarron
+    3300000: Bordes
+    3300002: Marco
+    3300004: Pizarron
+    4300000: Bordes
+    4300002: Marco
+    4300004: Pizarron
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -73,8 +75,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -101,7 +103,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
