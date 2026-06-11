@@ -10,9 +10,13 @@ public class GameManager : MonoBehaviour
     public UIManager UIManager;
 
     public TextMeshProUGUI TextoTimer;
+    public TextMeshProUGUI TextoTimerFinal;
     public TextMeshProUGUI TextoScore;
+    public TextMeshProUGUI TextoScoreFinal;
 
-    public float Tiempo = 15f;
+    public float TiempoIncial = 5f;
+    float DuracionTiempo;
+    float Tiempo;
     public bool JuegoTerminado = false;
     
     public int MaximoScore = 4;
@@ -30,14 +34,13 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         UpdateScore(0);
+        Tiempo = TiempoIncial;
     }
 
     public void UpdateScore(int score)
     {
-        if (!JuegoTerminado)
-        {
-            TextoScore.text = "Score: " + score.ToString();
-        }
+        TextoScore.text = "Score: " + score.ToString();
+        TextoScoreFinal.text = "Score: " + score.ToString();
     }
 
     // Update is called once per frame
@@ -47,16 +50,15 @@ public class GameManager : MonoBehaviour
         {
             Tiempo -= Time.deltaTime;
             TextoTimer.text = "Tiempo: " + Tiempo.ToString("F1");
+            DuracionTiempo = TiempoIncial - Tiempo;
+            TextoTimerFinal.text = "Tiempo: " + DuracionTiempo.ToString("F1");
         }
         
         if (Tiempo <= 0 && !JuegoTerminado)
         {
             Debug.Log("GAME OVER");
-
             JuegoTerminado = true;
-
             UIManager.MostrarPantallaGameOver();
-
             Time.timeScale = 0;
         }
 
