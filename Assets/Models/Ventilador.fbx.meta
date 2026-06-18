@@ -1,43 +1,29 @@
 fileFormatVersion: 2
-guid: e80289dd6c578184d9342a18152b23f6
+guid: e01619fe8a981bf4e867ae4441050bbb
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Paredes
-    100004: Piso
-    100006: Puerta
-    100008: Techo
-    100010: Ventanas
-    400000: //RootNode
-    400002: Paredes
-    400004: Piso
-    400006: Puerta
-    400008: Techo
-    400010: Ventanas
-    2100000: Pared Beige
-    2100002: Ladrillo
-    2100004: Puerta blanca
-    2100006: Material.001
-    2100008: Metal ventana
-    2100010: Ventana
-    2100012: Puerta gris
-    2100014: Techo
-    2300000: Paredes
-    2300002: Piso
-    2300004: Puerta
-    2300006: Techo
-    2300008: Ventanas
-    3300000: Paredes
-    3300002: Piso
-    3300004: Puerta
-    3300006: Techo
-    3300008: Ventanas
-    4300000: Paredes
-    4300002: Piso
-    4300004: Puerta
-    4300006: Techo
-    4300008: Ventanas
+    100000: Aspas
+    100002: Puntita
+    100004: //RootNode
+    100006: Ventilador
+    400000: Aspas
+    400002: Puntita
+    400004: //RootNode
+    400006: Ventilador
+    2100000: Material.005
+    2100002: Puntita
+    2100004: Material.004
+    2300000: Aspas
+    2300002: Puntita
+    2300004: Ventilador
+    3300000: Aspas
+    3300002: Puntita
+    3300004: Ventilador
+    4300000: Aspas
+    4300002: Puntita
+    4300004: Ventilador
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
